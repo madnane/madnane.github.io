@@ -10,7 +10,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="author" content="Ismael Lemhadri" />
-	<meta name="description" content="Professional homepage of Ismael Lemhadri, graduate student in Applied Mathematics" />
+	<meta name="description" content="Personal homepage of Ismael Lemhadri, graduate student in Applied Mathematics" />
 	<meta name="keywords" content="Benjamin Guedj, Gerard Biau, Eric Moulines, Pierre Alquier, Gilles Guillot, Inria, Lille, UPMC, Paris, LSTA, MODAL, mathematics, mathematiques, apprentissage statistique, statistics, statistique, learning, statistical learning, machine learning, aggregation, PAC, PAC-Bayesian, high dimensional, high-dimensional, MCMC, sparse estimation, sparsity" />
 	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -56,10 +56,8 @@
 <nav id="nav">
 	<ul>
 		<li><a href="#header">Top</a></li>
-		<li><a href="#intro" class="active">Bio</a></li>
-		<li><a href="#first">News</a></li>
-		<li><a href="#second">Research</a></li>
-		<li><a href="#cta">Publications</a></li>
+		<li><a href="#intro" class="active">About me</a></li>
+		<li><a href="#cta">Projects</a></li>
 		<li><a href="#footer">Contact</a></li>
 	</ul>
 </nav>
@@ -105,37 +103,72 @@
 				<section id="cta" class="main">
 					<header class="major">
 						<h2>Projects</h2>
-						<p><a href="https://arxiv.org/a/guedj_b_1.html">arXiv</a> &bull; <a href="https://haltools.inria.fr/Public/afficheRequetePubli.php?auteur_exp=Benjamin%2C+Guedj&CB_auteur=oui&CB_titre=oui&CB_identifiant=oui&CB_article=oui&CB_DOI=oui&CB_typdoc=oui&langue=Anglais&tri_exp=annee_publi&tri_exp2=typdoc&tri_exp3=date_publi&ordre_aff=AT&Fen=Aff&css=../css/styles_publicationsHAL.css">HAL</a> &bull; <a href="https://scholar.google.fr/citations?user=q-JTC2sAAAAJ&hl=fr">Google Scholar</a> &bull; <a href="https://www.researchgate.net/profile/Benjamin_Guedj">ResearchGate</a></p>
 						<!-- &bull; <a href="">HALtools</a> -->
 					</header>
-					<h3>Preprints</h3>
-					<ol reversed="reversed">
-						<li>
-							<a href="http://math.univ-lille1.fr/~celisse/">A. Celisse</a> and <strong>B. Guedj</strong>.
-							<em>Stability revisited: new generalisation bounds for the Leave-one-Out</em>.
-							<br>
-							[ <a href="pdf/Pre-CelisseGuedj.pdf">pdf</a> ] &bull; [ <a href="http://arxiv.org/abs/1608.06412">link</a> ]
-						</li>
-						<li>
-							L. Li, <strong>B. Guedj</strong> and <a href="http://www.math.univ-angers.fr/~loustau/">S. Loustau</a>. <!-- (2016). -->
-							<em>PAC-Bayesian Online Clustering</em>.
-							<br>
-							[ <a href="pdf/Pre-LiGuedjLoustau.pdf">pdf</a> ] &bull; [ <a href="http://arxiv.org/abs/1602.00522">link</a> ] &bull; [ <a href="https://cran.r-project.org/web/packages/PACBO/index.html">software</a> ]
-						</li>
-						<li>
-							<a href="http://alquier.ensae.net">P. Alquier</a> and <strong>B. Guedj</strong>. <!-- (2016). -->
-							<em>An Oracle Inequality for Quasi-Bayesian Non-Negative Matrix Factorization</em>.
-							<br>
-							[ <a href="pdf/Pre-AlquierGuedj.pdf">pdf</a> ] &bull; [ <a href="http://arxiv.org/abs/1601.01345">link</a> ] &bull; [ <a href="https://github.com/astha736/PACbayesianNMF">software</a> ]
-						</li>
-						<li>
-							<strong>B. Guedj</strong> and
-							<a href="https://sites.google.com/site/sylvainrobbiano/">S. Robbiano</a>. <!-- (2015). -->
-							<em>PAC-Bayesian High Dimensional Bipartite Ranking</em>.
-							<br>
-							[ <a href="pdf/Pre-GuedjRobbiano.pdf">pdf</a> ] &bull; [ <a href="http://arxiv.org/abs/1511.02729">link</a> ]
-						</li>
-					</ol>
+				<ul>
+				  <li>
+				  <p>"Twitter Feeds and Surge Modeling", 2016</p> 
+					<p>Supervisor : Prof. <a href="www.cmap.polytechnique.fr/~gobet/">Emmanuel Gobet</a>, Department of Applied Mathematics, Ecole Polytechnique</p> 
+				  <p>With <a href="https://fr.linkedin.com/in/laurent-meunier-464476103/en">Laurent Meunier</a>, I developed a probabilistic model for social networks dynamics. </p>
+				  <p> Detecting significant changes in networks flows, such as temporary surges in traffic,
+				  is of significant practical importance for maintaining server reliability, and predicting "trendy" topics in advance.
+				  <p>The objective of this work was to model the dynamics of "viral" tweets and the peer-to-peer propagation of ideas and moods, and compare it to an exegeneous flow of messages.</p>
+				  <p>By combining established results on branching processes and recent work by <a href="https://ilemhadri.github.io/SimmaJordan.pdf">Simma & Jordan</a>,
+				  we build a model based on point processes and simulate its evolution using Python.</p>
+				  <p> The specific point processes used, named Hawkes Processes, were introduced in 1971 to model earthquakes that happened in cascades.</p>
+				  <p> We also develop a model to account for specific features that are linked with the more popular tweets.</p>
+				  <p> Finally, using rare-event simulation techniques such as importance sampling, we estimate the probability of a "Twitpocalypse",
+				   namely, that 1 billion messages are emitted within 24 hours.</p>
+				  <p>[<a href="http://http://bit.ly/MAP474D">report in French</a>] [<a href="https://github.com/ilemhadri/Twitpocalypse">code</a>] </p>
+				  </li>
+				  
+				  <li>
+				  <p>Machine Learning Competition: <a href="http://www.datasciencegame.com/">The Data Science Game</a>, 2016</p> 
+				  <p>With Guillaume Lample, Marc Szafraniec and Pierre-Victor Chaumier, I participated in the second edition of the Data Science Game, an international competition in data science.</p>
+				  <p> The first phase of the game, which we solved using Deep Neural Networks, involved classification of roof images. A summary of this phase is available
+				  <a href="http://bit.ly/DeepLearningDSG">here</a>.</p>
+				  <p> The finals involved prediction of insurance-related data and heavily relied on feature engineering.</p>
+				   <p> Our team was ranked 2nd/143. </p>
+				  </li>
+				  
+				  <li>
+				  <p>"Bitcoin Trading", 2015</p> 
+				  <p> Nowadays, a major part of stock market trading is entirely electronic and relies on quantitative strategies.</p>
+				  <p> Many of these strategies use current and past historical data about the market to obtain a price prediction. Depending on the predicted value for the stock price, a
+				  buy/sell/wait action is taken. However, there are few strategies which quantitatively make use of qualitative data, such as news reports and relevant social network data.</p>
+				  <p>This work involved statistical analysis of historical stock prices to implement an algorithmic trading strategy for the Bitcoin, an electronic crypto-currency.</p> 
+				  <p>The main algorithm is adapted from <a href="http://bit.ly/BitcoinDevavrat">recent work</a> by Devavrat Shah and Kang Zhang.
+				  The results were validated with extensive backtests.</p>
+				  <p> Next, I extended the algorithm with an additional predictor that relies on Twitter sentiment analysis.
+				  I set up a framework that retrieves and analyzes relevant Twitter messages, and averages the sentiment with time sliding windows to obtain a sentiment indicator.</p>
+				  By putting together the previous statistical algorithm and the Twitter sentiment, we obtain a new price predictor.</p>
+				  <p> The results were again validated with backtests,
+				  confirming the advantage of using both statistical and qualitative data.</p>
+				  <p>[Code proprietary of Keyrus Capital Markets] </p>
+				  </li>
+
+				  <li>
+				  <p>"Protein Structure Classification", 2016</p> 
+					<p>Supervisor : Prof. <a href="https://www.lix.polytechnique.fr/~nielsen/">Frank Nielsen</a>, Department of Computer Science, Ecole Polytechnique</p> 
+				  <p> Recently, bioscientists have developed new protein structures through computer simulations.</p> 
+				  <p> Within the <a href="http://predictioncenter.org/">CASP Project</a>,one important area of research is to find which of these simulated structures, if any, can be found in natural environments.</p>
+				  <p> We use hierarchical clustering and classification techniques to assess large numbers of protein structures.</p>
+				  <p> Furhermore, we develop parallel versions of the C++ algorithms using the MPI interface.</p>
+				  <p>[<a href="http://ilemhadri.github.io/CASP.pdf">Project statement</a>] [<a href="https://github.com/ilemhadri/CASP">code</a>] </p>
+				  </li>
+				  
+				   <li>
+				  <p>"Group Theory : Applications of Polya's Counting Theorem", 2015</p> 
+				  <p>Supervisor : <a href="https://webusers.imj-prg.fr/~david.hernandez/">David Hernandez</a>, Department of Mathematics, Ecole Polytechnique
+				  <p>Consider the following combinatorics problem : how many colorings of a cube are there with 3 colors, up to a rotation ?</p> 
+				  <p> This question, and many other counting problems that arise from everyday life, can be solved using Polya's powerful counting theorem.
+				  <p> This short work revisits Polya's theorem and applies it to solve various counting problems from geometry and ring theory.</p>
+				  <p>[<a href="http://ilemhadri.github.io/MAT451.pdf">Report in French</a>] </p>
+				  </li>
+				  
+				  
+				</ul>
+
 					<h3>International peer-reviewed journals</h3>
 					<ol reversed="reversed">
 						<li>
